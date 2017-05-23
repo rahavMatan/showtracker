@@ -27,13 +27,13 @@
       <li data-match-route="/signup"><a href="/signup">Sign up</a></li>
     </ul>
     <ul class="nav navbar-nav pull-right" ng-if="currentUser">
-      <li class="navbar-text" >{{currentUser.email}}</li>
+      <li class="navbar-text" >{{user.email}}</li>
       <li><a href="javascript:void(0)" ng-click="logout()">Logout</a></li>
     </ul>
   </div>
 <div ng-view></div>
 
-<!-- <script src="vendor/angular.js"></script>
+<script src="vendor/angular.js"></script>
 <script src="vendor/angular-strap.js"></script>
 <script src="vendor/angular-strap.tpl.js"></script>
 <script src="vendor/angular-messages.js"></script>
@@ -52,10 +52,10 @@
 <script src="controllers/signup.js"></script>
 <script src="controllers/login.js"></script>
 <script src="services/auth.js"></script>
-<script src="controllers/navbar.js"></script> -->
+<script src="controllers/navbar.js"></script>
 
-<script src="app.min.js"></script>
-<script src="templates.js"></script>
+<!-- <script src="app.min.js"></script>
+<script src="templates.js"></script> -->
 
 </body>
 </html>

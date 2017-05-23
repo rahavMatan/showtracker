@@ -11,10 +11,10 @@ gulp.task('sass', function() {
   gulp.src('public/stylesheets/style.scss')
     .pipe(plumber())
     .pipe(sass())
-    .pipe(uncss({
-      html:['public.index.html',
-             'public/views/*.html']
-    }))
+    // .pipe(uncss({
+    //   html:['public.index.html',
+    //          'public/views/*.html']
+    // }))
     .pipe(csso())
     .pipe(gulp.dest('public/stylesheets'));
 });
